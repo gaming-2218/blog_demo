@@ -36,7 +36,7 @@ Despues cargar los cambios
 git push
 ```
 ## Diseño
-Se emplea la libreria [Tailwind](https://tailwindcss.com/docs/installation) 
+Se emplea la libreria [Tailwind](https://tailwindcss.com/docs/installation) and [Flowbite](https://flowbite.com/docs/getting-started/quickstart/) 
 
 
 # Tarea 1
