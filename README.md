@@ -35,6 +35,10 @@ Despues cargar los cambios
 ```
 git push
 ```
+## Diseño
+Se emplea la libreria [Tailwind](https://tailwindcss.com/docs/installation) 
+
+
 # Tarea 1
 
 
