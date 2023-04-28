@@ -38,18 +38,18 @@ git push
 # Tarea 1
 
 
-Asignado a Erik
+### Asignado a Erik
 ![alt text](https://i.pinimg.com/originals/44/c1/d3/44c1d37d243853c649af37a04410fda5.png)
 
-Asignado a Brayan Sanchez 
+### Asignado a Brayan Sanchez 
 ![alt text](https://i.pinimg.com/originals/9b/c7/3a/9bc73ac26dbadce62df663a3671b874e.png)
 
-Asignado a Brayan Turin
+### Asignado a Brayan Turin
 ![alt text](https://i.pinimg.com/originals/8f/d3/20/8fd3205fdf69735c3f3eb55f75ecb266.png)
 
 guardar cambios en branch-3
 
-Asignado a Stefany
+### Asignado a Stefany
 ![alt text](https://i.pinimg.com/originals/0e/0b/4d/0e0b4dd96a28a89a1eb7f980a9249289.png)
 
 guardar cambios en branch-4
