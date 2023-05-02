@@ -1,0 +1,339 @@
+/* Header Section and Home Section (Erik) */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.7;
+  color: #858585;
+  background-color: #fff;
+}
+
+.align-items {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_ {
+  padding: 0 2rem;
+  max-width: 1400px;
+  width: 100%;
+}
+
+.row {
+  display: inline-flex;
+}
+
+.column {
+  float: left;
+}
+
+.text {
+  color: #6A6A6A;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+}
+
+.btn_blue {
+  background-color: #0C5ADB;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 10px 30px;
+}
+
+.navbar {
+  list-style: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 10;
+padding: 30px 40px;
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.nav_content {
+  display: flex;
+  align-items: stretch;
+}
+
+.nav_logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+  text-decoration: none;
+  flex-grow: 2
+}
+
+.nav_menu {
+  list-style: none;
+  
+  flex-grow: 8;
+}
+
+nav .menu_list {
+  list-style: none;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  align-items: ;
+}
+
+nav .menu_item {
+  padding: 0 0.5rem;
+  position: relative;
+  display: inline-flex;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  top: 100%;
+    left: 0
+  
+}
+
+.menu_item:hover .dropdown-content {
+  display: block;
+  z-index: 9999;
+}
+
+.nav_tools {
+  list-style: none;
+  flex-grow: 1
+}
+
+.navbar .btn {
+  background-color: #0C5ADB;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 5px 5px;
+  margin: 0 5px;
+}
+
+.header {
+  background-color: #0252B3;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  padding-top: 200px;
+  min-height: min-content;
+}
+
+.header .refer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.header .title {
+  font-size: 3rem;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: capitalize;
+  display: inline-flex;
+}
+
+.header .subtitle {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-decoration: none;
+  display: inline-flex;
+}
+
+.header .image {
+  justify-content: center;
+  align-items: self-end;
+}
+
+.header .image img {
+  width: auto;
+  height: 60%;
+  position: relative;
+  object-fit: cover;
+}
+
+/* .header .image_rotate {
+  
+  
+  position: absolute;
+  z-index: 1;
+}
+
+.header .image_rotate img {
+  width: auto;
+  height: 70%;
+  
+  animation: rotate 15s linear infinite;
+}
+
+@keyframes rotate {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+} */
+
+.about_us {
+  padding: 50px 0;
+  display: flex;
+}
+
+.about_us .refer {
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+  /* letras separadas, mayuscula, color azul, bold, letras anchas */
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #135EDA;
+  font-weight: 700;
+
+}
+
+.about_us .title {
+  margin: 10px 0;
+  font-size: 1.8rem;
+  font-weight: 00;
+  color: #000;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.about_us .title span {
+  color: #0C5ADB;
+}
+.about_us .subtitle {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+}
+
+.about_us .text {
+  margin: 10px 0;
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none;
+  display: inline-flex;
+  border-left: 1px solid #BFDEED;
+  padding-left: 25px;
+}
+
+.about_us .image {
+  margin: 10px 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.about_us .image img {
+  width: auto;
+  height: 50%;
+  object-fit: cover;
+}
+
+.about_us .details {
+  margin: 20px 0;
+  
+  text-decoration: none;
+  display: inline-flex;
+  text-transform: capitalize;
+}
+
+.advantages {
+  padding: 5rem 0;
+  background-color: #EFF2F7;
+}
+
+.card_list {
+  margin: 0 10px;
+  padding: 0 1rem;
+  display: flex; 
+  flex-direction: row;
+}
+.advantages .index {
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 10px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #0C5ADB;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.advantages hr {
+  border: 1px solid #0C5ADB;
+  width: 20px;
+  margin: 15px 10px;
+  /* longitud de 10px */
+}
+
+.card_body {
+  margin: 0px 10px;
+}
+
+.advantages .title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  
+  color: #232323;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.advantages .text {
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none;  
+}
+/* Services and Choose Section (Brayan Sanchez) */
+
+
+
+
+
+/* Portafolio ,Form and Team Member Section (Brayan Turin) */
+
+
+
+
+
+/* End Section and Footer (Stefany) */
