@@ -1,19 +1,320 @@
-/* Header Section and Home Section (Erick) */
+.primero {
+margin: auto;
+text-align: center;
+position: relative;
+}
+
+.titulo {
+margin: auto;
+text-align: center;
+position: relative;
+z-index: 99;
+margin-bottom: 45px;
+font-family: 'Muli';
+
+}
+.titulo h5{
+color: blue;
+font-size: 18px;
+text-transform: uppercase;
+font-weight: 700;
+letter-spacing: 5px;
+}
+
+.titulo h3{
+font-size: 30px;
+margin-bottom: 0px;
+text-transform: capitalize;
+margin-top: 0;
+line-height: 0.5;
+font-weight: 800;
+font-family: sans-serif;
+}
+
+.titulo h2{
+font-size: 30px;
+margin-bottom: 0px;
+text-transform: capitalize;
+margin-top: 0;
+line-height: 1.2;
+font-weight: 800;
+font-family: sans-serif;
+}
+
+.barra1{
+height: 5px;
+width: 90px;
+background: #aec6cf;
+margin: 20px auto;
+position: relative;
+border-radius: 30px;
+}
+
+.barra1::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: -2.7px;
+	height: 10px;
+	width: 10px;
+	border-radius: 50%;
+	background: #0c5adb;
+}
+
+.botones {
+    padding: 0px 0 15px;
+    text-align: center;
+}
+
+.botones ul {
+	margin-bottom: 30px;
+	text-align:center;
+}
+
+.botones ul li {
+	display: inline;
+}
+.botones ul li{
+    background: #f2f4ff;
+    border: medium none;
+    font-size: 16px;
+    line-height: 1;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    text-transform: capitalize;
+    padding: 12px 27px; 
+    font-weight: 500;
+    letter-spacing: 2px;
+    position: relative;
+    margin: 0 3px;
+    margin-bottom: 7px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.botones ul li:hover,
+.botones ul li.item_principal {
+	color: #fff;
+	background:#0c5adb;
+}
 
 
+.contendor1 {
+    overflow:hidden;
+}
 
 
+.imgs {
+    position:relative;
+    z-index:1;
+}
 
-/* Services and Choose Section (Brayan Sanchez) */
+.imgs img {
+	display:block;
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	    transform: scale(1);
+	-webkit-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+	width: 100%; 
+
+}
+
+.img:hover .imgs img{
+    -webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	    transform: scale(1.1);
+}
+
+.contenido {
+    position: absolute;
+    text-align: center;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    right: 20px;
+    bottom: 35px;
+    left: 20px;
+    opacity: 0;
+    background: #0c5adb;
+    margin: auto;
+    text-align: left;
+    padding: 30px 20px 30px;
+    border-radius: 5px;
+}
+
+.img:hover .contenido{
+    opacity:1;
+	bottom:50px;
+}
+
+.multi_gallery.contenido {
+	height: 90%;
+	width: 80%;
+	right: 10%;
+	top: 5%;
+	bottom: 5%;
+	left: 10%;
+}
+
+.contenido h3 {
+    margin: 8px 0 0px;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+}
+.contenido h3 a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.contenido p {
+	color: #fff;
+	line-height: 1.2;
+	margin: 5px 0 0;
+}
+
+.contenido p span {
+	display: inline-block;
+	padding-top: 0px;
+}
+
+.make_an_free_consultant {
+background-color: #0c5adb;
+}
+form{
+    margin-left: 10%;
+width: 100%;
+    background-color: transparent;
+    border-color: transparent;
+    display: block;
+    margin-top: 0cm;
+}
+input, textarea{
+
+width: 40%;
+margin-left: auto;
+margin-bottom: 20px;
+margin-right: 30px;
+padding: 7px;
+box-sizing: border-box;
+font-size: 17px;
+border: none;
+border-radius: 5px;
+padding: 10px;
+font-family: inherit;
+background-color: rgb(221, 221, 212);
+}
+
+textarea{
+width: 83%;
+align-self: center;
+padding: 50px;
+}
+
+#boton{
+width: auto;
+margin-left: 35%;
+background-color:rgb(214, 212, 212);
+}
+.titulo h5,h3,h2{
+margin-bottom: 30px;
+}
+.titulo {
+padding: 40px;
+}
+
+.align {
+width: 400;
+height: 500;
+margin: 10px;
+position: relative;
+}
+.Picture {
+display: flex;
+justify-content: center;
+}
 
 
+.content {
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #0c5adb;
+    float: none;
+    text-align: center;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 0;
+}
 
+.iconos a{
+	right: -200;
+	width: 50px;
+	opacity: 1;
+	visibility: visible;
+    color: #0C5ADB;
+    background: #fff;
+    text-align: center;
+    display:inline-block ;
+    margin-top: 7px;
+    justify-content: center;
+    position: absolute;
+}
 
+.igm a {
+    position: relative;
+    }
+    
+.igm a .img{
+transition: all 500ms ease-out;
+}
 
-/* Portafolio ,Form and Team Member Section (Brayan Turin) */
+.igm a .align{
+position: relative;
+top: 0;
+transition: all 500ms ease-out;
+opacity: 1;
+transition: all 500ms ease-out;
+visibility: visible;
+    }
 
+.igm a:hover > .align{
+    opacity: 0.5;
+    visibility: visible;
+    border-bottom: 10px solid blue;
+}
+.igm a:hover > .iconos i {
+margin-bottom: 50px ;
+}
+.name{
+text-decoration: none;
+color: black;
+font-family:Arial;
+font-size: 20px;
+margin-bottom: 5px;
+}
+.iconos {
+    position: relative;
+    right: -160px;
+    width: 70px;
+    background: transparent;
+    padding: 12px 0;
+    opacity: 0.7;
+    visibility: hidden;
+    transition: all 0.7s ease 0s;
 
-
-
-
-/* End Section and Footer (Stefany) */
+    transform: translateY(-170%);
+    }
+.item1{
+opacity: 1;
+visibility: visible;
+}
+    .igm .item1:hover > .iconos{
+        opacity: 1;
+        visibility: visible;
+    }
