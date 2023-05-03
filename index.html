@@ -24,12 +24,12 @@
   <nav class="align-items navbar  ">
     <div class="container_">
       <div class="nav_content">
-        <div class="nav_logo" style="flex-grow: 1">
+        <div class="nav_logo">
           <a href="index.html">
             <img src="img/logo.png" alt="logo">
           </a>
         </div>
-        <div class="nav_menu" style="flex-grow: 8">
+        <div class="nav_menu">
           <ul class="menu_list">
             <li class="menu_item">
               <span>Home</span>
@@ -92,12 +92,39 @@
         </div>
       </div>
 
-    </div>
+      <!-- nav responsive design -->
+      <div class="nav_responsive">
+        <div class="nav_responsive_menu">
+          <button type="button" class="btn">
+            <span class="material-symbols-outlined">
+              menu
+            </span>
+          </button>
+        </div>
+        <div class="nav_responsive_logo">
+          <a href="index.html">
+            <img src="img/logo.png" alt="logo">
+          </a>
+        </div>
+        <div class="nav_responsive_tools">
+          <button type="button" class="btn">
+            <span class="material-symbols-outlined">
+              search
+            </span>
+          </button>
+          <button type="button" class="btn">
+            <span class="material-symbols-outlined">
+              shopping_cart
+            </span>
+          </button>
+        </div>
+      </div>
   </nav>
+
   <header class="align-items header">
     <div class="container_">
       <div class="row">
-        <div class="column" style="width: 70%;">
+        <div class="header_text column">
           <div class="row">
             <h2 class="refer">
               // 25+YEARS OF EXPERIENCE
@@ -117,10 +144,8 @@
             </h3>
           </div>
         </div>
-        <div class="column" style="width: 50%;">
-          <div class="image">
-            <img src="img/man.png" alt="man">
-          </div>
+        <div class="image column">
+          <img src="img/man.png" alt="man">
         </div>
         <!-- <div class="image_rotate">
           <img src="img/dot-circle.png" alt="man">
@@ -133,7 +158,7 @@
   <section class="align-items about_us">
     <div class="container_">
       <div class="row">
-        <div class="column" style="width: 50%;">
+        <div class="about_text column">
           <h2 class="refer">About Us</h2>
           <h1 class="title">Preparing for your success provide best <span>IT solutions</span></h1>
           <h3 class="subtitle">
@@ -142,11 +167,9 @@
           </h3>
           <p class="text">
             The standard chunk of Lorem Ipsum used since the 1500s is and reproduced below for those interested.
-            Sections
-            1.10.32
-            and also 1.10.33 from “de Finibus Bonorum et Malorum” by Cicero are alse reproduced in their exact original
-            form,
-            accompanied
+
+            Sections 1.10.32 and also 1.10.33 from “de Finibus Bonorum et Malorum” by Cicero are alse reproduced in
+            their exact original form, accompanied.
 
             The standard chunk of Lorem Ipsum used since the 1500s is and reproduced below for those interested
           </p>
@@ -154,10 +177,8 @@
             <a href="index.html" class="about_us_link">More details</a>
           </div>
         </div>
-        <div class="column" style="width: 50%;">
-          <div class="image">
-            <img src="img/slider01.jpg" alt="about_us">
-          </div>
+        <div class="image column">
+          <img src="img/slider01.jpg" alt="about_us">
         </div>
       </div>
 
@@ -169,71 +190,57 @@
     <div class="container_">
       <div class="row">
         <div class="column">
-          <div class="row">
-            <div class="card_list">
-              <div class="index">
-                <h1>01</h1>
-              </div>
-              <div class="column">
-                <hr>
-              </div>
-              <div class="card_body">
-                <h1 class="title">
-                  SEO & Digital Marketing
-                </h1>
-                <p class="text">
-                  Whether bringing new amazing products and services to market discovering new ways to make mature
-                  products.
-                </p>
-                <a href="">Read More</a>
-              </div>
+          <div class="card_list">
+            <div class="index">
+              <h1>01</h1>
+            </div>
+            <hr>
+            <div class="card_body">
+              <h1 class="title">
+                SEO & Digital Marketing
+              </h1>
+              <p class="text">
+                Whether bringing new amazing products and services to market discovering new ways to make mature
+                products.
+              </p>
+              <a href="">Read More</a>
             </div>
           </div>
         </div>
         <div class="column">
-          <div class="row">
-            <div class="card_list">
-              <div class="index">
-                <h1>02</h1>
-              </div>
-              <div class="column">
-                <hr>
-              </div>
-              <div class="card_body">
-                <h1 class="title">
-                  Marketing Strategy & Analysis
-                </h1>
-                <p class="text">
-                  Whether bringing new amazing products and services to market discovering new ways to make mature
-                  products.
-                </p>
-                <a href="">Read More</a>
-              </div>
+          <div class="card_list">
+            <div class="index">
+              <h1>02</h1>
             </div>
-
+            <hr>
+            <div class="card_body">
+              <h1 class="title">
+                Marketing Strategy & Analysis
+              </h1>
+              <p class="text">
+                Whether bringing new amazing products and services to market discovering new ways to make mature
+                products.
+              </p>
+              <a href="">Read More</a>
+            </div>
           </div>
         </div>
         <div class="column">
-          <div class="row">
-            <div class="card_list">
-              <div class="index">
-                <h1>03</h1>
-              </div>
-              <div class="column">
-                <hr>
-              </div>
-              <div class="card_body">
-                <h1 class="title">
-                  Web Design & Development
-                </h1>
-                <p class="text">
-                  Whether bringing new amazing products and services to market discovering new ways to make mature
-                  products.
-                </p>
-                <a href="">Read More</a>
-              </div>
+          <div class="card_list">
+            <div class="index">
+              <h1>03</h1>
             </div>
-
+            <hr>
+            <div class="card_body">
+              <h1 class="title">
+                Web Design & Development
+              </h1>
+              <p class="text">
+                Whether bringing new amazing products and services to market discovering new ways to make mature
+                products.
+              </p>
+              <a href="">Read More</a>
+            </div>
           </div>
         </div>
       </div>
