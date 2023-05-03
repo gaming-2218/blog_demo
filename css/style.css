@@ -32,7 +32,7 @@ body {
 }
 
 .container_ {
-  padding: 0 1rem;
+  padding: 0 3rem;
   max-width: 1400px;
   width: 100%;
 }
@@ -111,7 +111,7 @@ body {
   right: 0;
   top: 0;
   z-index: 10;
-  padding: 30px 40px;
+  padding: 30px 0;
   background-color: #fff;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
@@ -123,7 +123,12 @@ body {
 }
 
 .nav_logo {
-  flex-grow: 1
+  flex-grow: 2;
+}
+
+.nav_logo img {
+  width: 12rem;
+  max-width: 10rem;
 }
 
 .nav_menu {
@@ -247,8 +252,8 @@ nav .menu_item {
 
 @media screen and (max-width: 768px) {
   .header{
-    padding-top: 6rem;
-    padding-bottom: 3rem;
+    padding-top: 6.5rem;
+    padding-bottom: 1rem;
   }
   .header_text {
     width: 100%;
@@ -283,10 +288,8 @@ nav .menu_item {
 }
 
 .about_text {
-  width: 50%;
+  width: 45%;
 }
-
-
 
 .about_us .refer {
   justify-content: space-between;
@@ -307,9 +310,11 @@ nav .menu_item {
   text-decoration: none;
   text-transform: capitalize;
 }
+
 .about_us .title span {
   color: #0C5ADB;
 }
+
 .about_us .subtitle {
   margin: 10px 0;
   font-size: 1.2rem;
@@ -330,18 +335,78 @@ nav .menu_item {
 
 .about_us .image {
   margin: 10px 0;
-  width: 50%;
-  height: 100%;
+  width: 55%;
   display: flex;
   justify-content: center;
   align-items: center;
-
+  padding: 0 1rem;
+  flex-direction: column;
 }
 
 .about_us .image img {
   width: auto;
   height: 50%;
   object-fit: cover;
+}
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 5rem;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 50rem;
+}
+
+@keyframes zoom {
+  from {transform: scale(0.1)} 
+  to {transform: scale(1)}
+}
+
+.close {
+  position: absolute;
+  top: 8rem;
+  right: 4rem;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
 }
 
 .about_us .details {
@@ -351,6 +416,7 @@ nav .menu_item {
   display: inline-flex;
   text-transform: capitalize;
 }
+
 @media screen and (max-width: 768px) {
   .about_us {
     flex-direction: column;
