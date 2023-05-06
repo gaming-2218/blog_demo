@@ -578,10 +578,266 @@ nav .menu_item {
   }
 }
 /* Services and Choose Section (Brayan Sanchez) */
+.contenedor-pestañas{
+    position: relative;
+    height: 846px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: flex-end;
+}
+.contenedor-choose {
+    position: relative;
+    height: 800px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.contenedor-choose .imagen-fondo{
+    height: 846px;
+    width: 100%;
+}
+.fondo-mundo {
+
+    position: absolute;
+    background-color: #0D2335D4;
+    opacity: 1;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+
+}
+
+.tab{
+    display: flex;
+    padding: 80px;
+}
+
+.tab-img{
+   height: 565px;
+}
+.tab-img img{
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.tab-botones{
+    padding-top: 20px;
+}
+.tab-txt{
+    width: 50%;
+    text-align: justify;
+    padding: 20px;
+    padding-left: 70px;
+}
+
+.tab-txt h2{
+    padding-bottom: 17px;
+    font-size: 24px;
+    margin-top: 0;
+}
+.tab-txt p{
+    padding-bottom: 15px;
+    color: rgb(118, 118, 118);
+}
+
+.tab-txt ul li{
+    padding-top: 10px;
+    padding-left: 20px;
+    color: rgb(87, 87, 87);
+}
+.contenedor-choose-texto {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    justify-content: center;
+    width: 90%;
+    height: 80%;
+}
+
+.contenedor-choose-texto div{
+    color: white;
+}
+
+.contenedor-choose-texto div h5{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 5px;
+    margin: 0 0 15px;
+}
+.contenedor-choose-texto div h3{
+    font-size: 44px;
+    margin-bottom: 0px;
+    text-transform: capitalize;
+    margin-top: 0;
+    line-height: 1.2;
+    font-weight: 800;
+}
+
+.contenedor-choose-texto div h2{
+    font-size: 44px;
+    margin-bottom: 0px;
+    text-transform: capitalize;
+    margin-top: 0;
+    line-height: 1.2;
+    font-weight: 800;
+}
+
+.contenedor-ball{
+    position: absolute;
+    display:flex;
+    width: 100px;
+    height: 10px;
+    margin-left: 45%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+.barra{
+    position: absolute;
+    background-color: rgb(159, 191, 205);
+    border-radius: 5px;
+    width: 90px;
+    height: 5px;
+    margin-top: 2px;
+    margin-left: 5px;
+}
+.ball {
+    width: 10%;
+    padding-bottom: 10%;
+    border-radius: 50%;
+    background: #2046d1;
+    
+    position: absolute;
+    left: 5%;
+  }
+  .ball {
+    animation: 7s move infinite ease-in-out;
+  }
+
+  @keyframes move {
+    0% {
+        left: 5%;
+    }
+    50% {
+        left: 85%;
+    }
+    100% {
+        left: 5%;
+    }
+  }
 
 
+.img-choose {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    margin-top: 80px;
+    justify-content: space-around;
+    padding-left: 130px;
+    padding-right: 130px;
+}
+
+.card{
+    position: relative;
+    width: 344px;
+    height: 410px;
+    margin: 10px;
+}
+.face {
+    position: absolute;
+    width: 344px;
+    height: 410px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.c-img {
+    transform: rotateY(0deg);
+}
+
+.c-img img {
+    position: absolute;
+    object-fit: cover;
+}
+
+.c-img div{
+    position: absolute;
+    width: 344px;
+    height: 410px;
+    background: linear-gradient(rgba(58, 57, 58, 0.059), 60%, rgb(0, 0, 0));
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+.c-img div h3{
+    padding-top: 320px;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.text-choose {
+    position: absolute;
+    transform: perspective(600px) rotateY(180deg);
+    width: 344px;
+    height: 410px;  
+    display: flex;
+    flex-direction: column;
+
+}
+
+.text-choose div{
+    position: absolute;
+    width: 344px;
+    height: 410px;
+    background-color: #0C5ADBDB;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+.text-choose div h3{
+    padding-top: 150px;
+    font-size: 23px;
+}
+
+.text-choose div p{
+    padding-top: 10px;
+    padding-inline: 10px;
+    padding-bottom: 20px;
+}
+
+.text-choose div a{
+    font-size: 20px;
+    padding-top: 30px;
+}
 
 
+.text-choose img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card {
+    position: relative;
+}
+
+.card:hover .c-img {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .text-choose {
+    transform: perspective(600px) rotateY(360deg);
+}
 
 /* Portafolio ,Form and Team Member Section (Brayan Turin) */
 
