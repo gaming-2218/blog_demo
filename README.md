@@ -1,6 +1,9 @@
+## Reference
+[Page demo](https://wp.ditsolution.net/techno/home-3/#)
 
-# Hi, I'm Erik! 👋
+[GitHub Pages](https://gaming-2218.github.io/blog_demo/)
 
+[Vercel Page](https://blog-demo-blond.vercel.app/index.html)
 
 ## Documentation
 
