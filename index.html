@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <title>Techno</title>
 </head>
 
@@ -32,7 +32,9 @@
         <div class="nav_menu">
           <ul class="menu_list">
             <li class="menu_item">
-              <span>Home</span>
+              <span>Home </span><span class="material-symbols-outlined">
+                expand_more
+              </span>
               <div class="dropdown-content">
                 <p>Hello World!</p>
               </div>
@@ -41,7 +43,9 @@
               <a href="index.html" class="nav_link">Company</a>
             </li>
             <li class="menu_item">
-              <span>Services</span>
+              <span>Services</span><span class="material-symbols-outlined">
+                expand_more
+              </span>
               <ul class="dropdown-content">
                 <li class="dropdown-item">
                   <a href="index.html" class="nav_link">IT Services</a>
@@ -58,16 +62,22 @@
               </ul>
             </li>
             <li class="menu_item">
+              <span>Pages</span><span class="material-symbols-outlined">
+                expand_more
+              </span>
               <div class="dropdown">
-                <span>Pages</span>
+
                 <div class="dropdown-content">
                   <p>Hello World!</p>
                 </div>
               </div>
             </li>
             <li class="menu_item">
+              <span>Blog</span><span class="material-symbols-outlined">
+                expand_more
+              </span>
               <div class="dropdown">
-                <span>Blog</span>
+
                 <div class="dropdown-content">
                   <p>Hello World!</p>
                 </div>
@@ -125,33 +135,40 @@
     <div class="container_">
       <div class="row">
         <div class="header_text column">
-          <div class="row">
-            <h2 class="refer">
-              // 25+YEARS OF EXPERIENCE
-            </h2>
-          </div>
-          <div class="row">
-            <h1 class="title">
-              We provide Best The IT Solutions
-            </h1>
-          </div>
-          <div class="row">
-            <h3 class="subtitle">
-              We are 100+ professional software engineers whit more than 10 years of experince
-              in
-              delivering superior
-              products
-            </h3>
-          </div>
+          <h2 class="refer">
+            // 25+YEARS OF EXPERIENCE
+          </h2>
+          <h1 class="title">
+            We provide Best The IT Solutions
+          </h1>
+          <h3 class="subtitle">
+            We are 100+ professional software engineers whit more than 10 years of experince
+            in
+            delivering superior
+            products
+          </h3>
+          <!-- boton circular que redirige a home  -->
+          <span class="intro_link">
+
+            <a class="header_button" href="index.html" class="btn">
+              <span class="material-symbols-outlined">
+                arrow_right
+              </span>
+            </a>
+            <span>See Our Introduction</span>
+          </span>
+
         </div>
         <div class="image column">
-          <img src="img/man.png" alt="man">
+          <img src="https://wp.ditsolution.net/techno/wp-content/uploads/2020/11/man.png
+" alt="man">
         </div>
-        <!-- <div class="image_rotate">
-          <img src="img/dot-circle.png" alt="man">
-        </div> -->
       </div>
-
+      <div class="row"></div>
+      <div class="image_rotate column">
+        <img src="https://wp.ditsolution.net/techno/wp-content/themes/techno/assets/images/dot-circle.png" alt="man">
+      </div>
+    </div>
     </div>
   </header>
 
@@ -195,9 +212,11 @@
         <div class="column">
           <div class="card_list">
             <div class="index">
-              <h1>01</h1>
+              <h1> 01</h1>
             </div>
-            <hr>
+            <div class="hr">
+              <hr>
+            </div>
             <div class="card_body">
               <h1 class="title">
                 SEO & Digital Marketing
@@ -206,7 +225,7 @@
                 Whether bringing new amazing products and services to market discovering new ways to make mature
                 products.
               </p>
-              <a href="">Read More</a>
+              <a href="">Read More &rarr;</a>
             </div>
           </div>
         </div>
@@ -215,7 +234,9 @@
             <div class="index">
               <h1>02</h1>
             </div>
-            <hr>
+            <div class="hr">
+              <hr>
+            </div>
             <div class="card_body">
               <h1 class="title">
                 Marketing Strategy & Analysis
@@ -224,7 +245,7 @@
                 Whether bringing new amazing products and services to market discovering new ways to make mature
                 products.
               </p>
-              <a href="">Read More</a>
+              <a href="">Read More &#8594;</a>
             </div>
           </div>
         </div>
@@ -233,17 +254,23 @@
             <div class="index">
               <h1>03</h1>
             </div>
-            <hr>
-            <div class="card_body">
-              <h1 class="title">
-                Web Design & Development
-              </h1>
-              <p class="text">
-                Whether bringing new amazing products and services to market discovering new ways to make mature
-                products.
-              </p>
-              <a href="">Read More</a>
+            <div class="hr">
+              <hr>
             </div>
+            <div class="column">
+              <div class="card_body">
+                <h1 class="title">
+                  Web Design & Development
+                </h1>
+                <p class="text">
+                  Whether bringing new amazing products and services to market discovering new ways to make mature
+                  products.
+                </p>
+                <a href="">Read More &#8594;</a>
+              </div>
+
+            </div>
+
           </div>
         </div>
       </div>
@@ -260,84 +287,90 @@
       </div>
       <div class="mb-4 text-center mr-8 mt-10 w-1/3">
         <p class="font-black mt-14">Digital marketing</p>
-        <p class="mt-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm tempor incididunt ut labore et dolore magna aliqua. Ut enim advis minim veniam, quis nostrud exercitat ullamco But I must explain to you how all this mistaken idea of denouncing
-    
-          Porem tpsum dolor sit amet, consectetur adipisicing elit, sed eiusm morem wpsum solor sit amet, consectetur adipisicing elit, sed eiusm tempor incididunt ut labore et dolore magna</p>
+        <p class="mt-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm tempor incididunt ut labore
+          et dolore magna aliqua. Ut enim advis minim veniam, quis nostrud exercitat ullamco But I must explain to you
+          how all this mistaken idea of denouncing
+
+          Porem tpsum dolor sit amet, consectetur adipisicing elit, sed eiusm morem wpsum solor sit amet, consectetur
+          adipisicing elit, sed eiusm tempor incididunt ut labore et dolore magna</p>
         <div class="mt-14">
-          <button class="bg-gray-300 hover:bg-blue-500 text-gray-600 font-bold py-2 px-4 rounded mx-2">All works</button>
-      <button class="bg-gray-300 hover:bg-blue-500 text-gray-600 font-bold py-2 px-4 rounded mx-2">Branding</button>
+          <button class="bg-gray-300 hover:bg-blue-500 text-gray-600 font-bold py-2 px-4 rounded mx-2">All
+            works</button>
+          <button class="bg-gray-300 hover:bg-blue-500 text-gray-600 font-bold py-2 px-4 rounded mx-2">Branding</button>
         </div>
-        </div>
+      </div>
     </div>
-    
-      
+
+
   </section>
 
- 
-    </div>
+
+  </div>
   <!---------Portafolio ,Form and Team Member Section (Brayan Turin)--------------->
   <section>
-    
+
     <div class="bg-gray-800">
       <div class="mt-8 my-8 text-white" style="margin-top: 100px;">
         <p class="text-center text-2xl uppercase p-8">Why choose us</p>
         <p class="text-center font-bold text-4xl p-8">Few Reasons why you </p>
         <p class="text-center font-bold text-4xl p-8">Should Choose Us </p>
       </div>
-      <div class="flex justify-center items-center mb-8" >
-          <input id="default-range" type="range" value="50" class="max-w-4xl h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700 mx-auto my-auto">
+      <div class="flex justify-center items-center mb-8">
+        <input id="default-range" type="range" value="50"
+          class="max-w-4xl h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700 mx-auto my-auto">
       </div>
-      <div  class="flex items-center justify-center p-8  " >
-        <div class="grid grid-cols-3 gap-4 mr-6  " >
-            <div class="max-w-sm" >
-                <a href="#">
-                    <img class="rounded-t-lg" src="img/team1.jpg" alt="" />
-                </a>
-                
-            </div>
-            <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" >
-                <a href="#">
-                    <img class="rounded-t-lg" src="img/team2.jpg" alt="" />
-                </a>
-                
-            </div>
-            <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" >
-                <a href="#">
-                    <img class="rounded-t-lg" src="img/team3.jpg" alt="" />
-                </a>
-                
-            </div>  
-        </div> 
+      <div class="flex items-center justify-center p-8  ">
+        <div class="grid grid-cols-3 gap-4 mr-6  ">
+          <div class="max-w-sm">
+            <a href="#">
+              <img class="rounded-t-lg" src="img/team1.jpg" alt="" />
+            </a>
+
+          </div>
+          <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <img class="rounded-t-lg" src="img/team2.jpg" alt="" />
+            </a>
+
+          </div>
+          <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <img class="rounded-t-lg" src="img/team3.jpg" alt="" />
+            </a>
+
+          </div>
+        </div>
+      </div>
+
     </div>
-      
-    </div>
-    
-    
-    
+
+
+
     <div class="mt-8 my-8" style="margin-top: 100px;">
       <p class="text-center text-blue-700 text-2xl uppercase p-8">Portfolio</p>
       <p class="text-center font-bold text-4xl p-8">Our Latest Works For</p>
       <p class="text-center font-bold text-4xl p-8">Your Business</p>
       <div class="flex justify-center items-center mb-8">
-        <input id="default-range" type="range" value="50" class="max-w-4xl h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700 mx-auto my-auto">
+        <input id="default-range" type="range" value="50"
+          class="max-w-4xl h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700 mx-auto my-auto">
       </div>
     </div>
-    
+
     <div class="flex justify-center mt-4">
       <button class="bg-gray-300 hover:bg-blue-500 text-gray-600 font-bold py-2 px-4 rounded mx-2">All works</button>
       <button class="bg-gray-300 hover:bg-blue-500 text-gray-600 font-bold py-2 px-4 rounded mx-2">Branding</button>
       <button class="bg-gray-300 hover:bg-blue-500 text-gray-600 font-bold py-2 px-4 rounded mx-2">Prototype</button>
       <button class="bg-gray-300 hover:bg-blue-500 text-gray-600 font-bold py-2 px-4 rounded mx-2">UX Research</button>
       <button class="bg-gray-300 hover:bg-blue-500 text-gray-600 font-bold py-2 px-4 rounded mx-2">Web Design</button>
-      
+
     </div>
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
     <div class="container mx-auto px-5 py-2 lg:px-32 lg:pt-12">
       <div class="grid grid-cols-3">
         <div class="flex  flex-wrap">
@@ -372,269 +405,277 @@
         </div>
       </div>
     </div>
-    
-    
-   
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
     <div class="mt-8 my-8" style="margin-top: 100px;">
       <p class="text-center text-blue-700 text-2xl uppercase p-8">Team member</p>
       <p class="text-center font-bold text-4xl p-8">Our Awesome Creative</p>
       <p class="text-center font-bold text-4xl p-8">Team member</p>
       <div class="flex justify-center items-center mb-8">
-        <input id="default-range" type="range" value="50" class="max-w-4xl h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700 mx-auto my-auto">
+        <input id="default-range" type="range" value="50"
+          class="max-w-4xl h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700 mx-auto my-auto">
       </div>
     </div>
-    <div  class="flex items-center justify-center p-8  " >
-      <div class="grid grid-cols-3 gap-4 mr-6  " >
-          <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" >
-              <a href="#">
-                  <img class="rounded-t-lg" src="img/team1.jpg" alt="" />
-              </a>
-              <div class="p-5 text-center">
-                <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">Bonnie Green</h5>
-                <span class="text-sm text-gray-500 dark:text-gray-400">Visual Designer</span>
-            </div>
+    <div class="flex items-center justify-center p-8  ">
+      <div class="grid grid-cols-3 gap-4 mr-6  ">
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+          <a href="#">
+            <img class="rounded-t-lg" src="img/team1.jpg" alt="" />
+          </a>
+          <div class="p-5 text-center">
+            <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">Bonnie Green</h5>
+            <span class="text-sm text-gray-500 dark:text-gray-400">Visual Designer</span>
           </div>
-          <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" >
-              <a href="#">
-                  <img class="rounded-t-lg" src="img/team2.jpg" alt="" />
-              </a>
-              <div class="p-5 text-center">
-                <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">Bonnie Green</h5>
-                <span class="text-sm text-gray-500 dark:text-gray-400">Visual Designer</span>
-            </div>
+        </div>
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+          <a href="#">
+            <img class="rounded-t-lg" src="img/team2.jpg" alt="" />
+          </a>
+          <div class="p-5 text-center">
+            <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">Bonnie Green</h5>
+            <span class="text-sm text-gray-500 dark:text-gray-400">Visual Designer</span>
           </div>
-          <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" >
-              <a href="#">
-                  <img class="rounded-t-lg" src="img/team3.jpg" alt="" />
-              </a>
-              <div class="p-5 text-center">
-                  <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">Bonnie Green</h5>
-                  <span class="text-sm text-gray-500 dark:text-gray-400">Visual Designer</span>
-              </div>
-          </div>  
-      </div> 
-  </div>
+        </div>
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+          <a href="#">
+            <img class="rounded-t-lg" src="img/team3.jpg" alt="" />
+          </a>
+          <div class="p-5 text-center">
+            <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">Bonnie Green</h5>
+            <span class="text-sm text-gray-500 dark:text-gray-400">Visual Designer</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!---------End Section and Footer (Stefany)---------->
-    <div class="bg-blue-600 text-white p-8" >
-        <p class="text-center" style="margin-top: 60px;">+880 013 143 206</p>
-        <p class="mb-2 text-center text-6xl font-bold ">To make requests </p>
-        <p class="mb-2 text-center text-6xl font-bold ">for the futher information</p>
-        <div class="flex items-center justify-center" style="margin-bottom: 100px;">
-            <button class="mb-6 mt-8 px-6 py-2 bg-white text-blue-500 rounded-md">Contat Us</button>
+  <div class="bg-blue-600 text-white p-8">
+    <p class="text-center" style="margin-top: 60px;">+880 013 143 206</p>
+    <p class="mb-2 text-center text-6xl font-bold ">To make requests </p>
+    <p class="mb-2 text-center text-6xl font-bold ">for the futher information</p>
+    <div class="flex items-center justify-center" style="margin-bottom: 100px;">
+      <button class="mb-6 mt-8 px-6 py-2 bg-white text-blue-500 rounded-md">Contat Us</button>
+    </div>
+  </div>
+
+  <div class="relative ">
+    <div class="absolute inset-0 flex items-center justify-center my-8 ">
+      <div
+        class="text-center border border-gray-200 rounded-lg bg-white mt-6 p-8 sm:flex sm:space-x-4 max-w-4xl w-full">
+        <div class="p-8">
+          <h1 class="font-bold text-5xl">15k</h1>
+          <p class="font-medium text-blue-700">Happy Clients</p>
         </div>
-    </div>
+        <div class="border-l border-gray-400 h-24"></div>
 
-    <div class="relative ">
-        <div class="absolute inset-0 flex items-center justify-center my-8 "  >   
-            <div class="text-center border border-gray-200 rounded-lg bg-white mt-6 p-8 sm:flex sm:space-x-4 max-w-4xl w-full">
-                <div class="p-8">
-                    <h1 class="font-bold text-5xl">15k</h1>
-                    <p class="font-medium text-blue-700">Happy Clients</p>
-                </div>
-                <div class="border-l border-gray-400 h-24"></div>
-
-                <div class="p-8">
-                    <h1 class="font-bold text-5xl">15k</h1>
-                    <p class="font-medium text-blue-700">Account number</p>
-                </div>
-                <div class="border-l border-gray-400 h-24"></div>
-                <div class="p-8">
-                    <h1 class="font-bold text-5xl">15k</h1>
-                    <p class="font-medium text-blue-700">Finished Projects</p>
-                </div>
-                <div class="border-l border-gray-400 h-24"></div>
-                <div class="p-8">
-                    <h1 class="font-bold text-5xl">15k</h1>
-                    <p class="font-medium text-blue-700">Win awards</p>
-                </div>
-            </div>
+        <div class="p-8">
+          <h1 class="font-bold text-5xl">15k</h1>
+          <p class="font-medium text-blue-700">Account number</p>
         </div>
-    </div>
-    <br>
-    <br>
-    <div class="mt-8 my-8" style="margin-top: 100px;">
-        <p class="text-center text-blue-700 text-2xl uppercase p-8">Latest article</p>
-        <p class="text-center font-bold text-4xl p-8">Our Latest Blog Posts</p>
-    </div>
-    <div class="flex justify-center items-center mb-8">
-        <input id="default-range" type="range" value="50" class="max-w-4xl h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700 mx-auto my-auto">
-    </div>
-
-    <div  class="flex items-center justify-center p-8  " >
-        <div class="grid grid-cols-3 gap-4 mr-6  " >
-            <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" >
-                <a href="#">
-                    <img class="rounded-t-lg" src="img/blogpost1.png" alt="" />
-                </a>
-                <div class="p-5">
-                    <span class="px-2 border-r border-gray-400 h-4 mr-2">Techno</span>
-                    <span>Abril 9,2023</span>
-
-                    <a href="#">
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">The most 10 Chrome Extention Downloand Strategy</h5>
-                    </a>
-                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Digital Transformation in Healthcare in 2023:
-                        Lorem, ipsum dolor sit amet consectetur 
-                    </p>
-                    <a href="#" class="inline-flex items-center p-2  text-sm font-medium text-center text-gray-600 ">
-                        Read more
-                        <img class="ml-2" src="img/flecha.png" alt="">
-                    </a>
-                </div>
-            </div>
-            <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" >
-                <a href="#">
-                    <img class="rounded-t-lg" src="img/blogpost2.png" alt="" />
-                </a>
-                <div class="p-5">
-                    <span class="px-2 border-r border-gray-400 h-4 mr-2">Techno</span>
-                    <span>Abril 9,2023</span>
-
-                    <a href="#">
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">The most 10 Chrome Extention Downloand Strategy</h5>
-                    </a>
-                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Digital Transformation in Healthcare in 2023:
-                        Lorem, ipsum dolor sit amet consectetur 
-                    </p>
-                    <a href="#" class="inline-flex items-center p-2  text-sm font-medium text-center text-gray-600 ">
-                        Read more
-                        <img class="ml-2" src="img/flecha.png" alt="">
-                    </a>
-                </div>
-            </div>
-            <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" >
-                <a href="#">
-                    <img class="rounded-t-lg" src="img/blogpost3.jpg" alt="" />
-                </a>
-                <div class="p-5">
-                    <span class="px-2 border-r border-gray-400 h-4 mr-2">Techno</span>
-                    <span>Abril 9,2023</span>
-
-                    <a href="#">
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">The most 10 Chrome Extention Downloand Strategy</h5>
-                    </a>
-                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Digital Transformation in Healthcare in 2023:
-                        Lorem, ipsum dolor sit amet consectetur 
-                    </p>
-                    <a href="#" class="inline-flex items-center p-2  text-sm font-medium text-center text-gray-600 ">
-                        Read more
-                        <img class="ml-2" src="img/flecha.png" alt="">
-                    </a>
-                </div>
-            </div>  
-        </div> 
-    </div>
-    <div class="bg-blue-600 text-white p-8" >
-        <p class="mb-2 text-center text-4xl font-bold ">Suscribe Our Newsletter</p>
-        <div class="flex items-center justify-center" >
-            <button class="mb-6 mt-8 px-6 py-2 bg-white text-blue-500 rounded-md">Contat Us</button>
+        <div class="border-l border-gray-400 h-24"></div>
+        <div class="p-8">
+          <h1 class="font-bold text-5xl">15k</h1>
+          <p class="font-medium text-blue-700">Finished Projects</p>
         </div>
+        <div class="border-l border-gray-400 h-24"></div>
+        <div class="p-8">
+          <h1 class="font-bold text-5xl">15k</h1>
+          <p class="font-medium text-blue-700">Win awards</p>
+        </div>
+      </div>
     </div>
-    <!---------Footer (Stefany)---------->
-    <footer class=" bottom-0 left-0 z-20 w-full p-4 bg-blue-900  shadow md:flex md:items-center md:justify-between md:p-6  text-white">
+  </div>
+  <br>
+  <br>
+  <div class="mt-8 my-8" style="margin-top: 100px;">
+    <p class="text-center text-blue-700 text-2xl uppercase p-8">Latest article</p>
+    <p class="text-center font-bold text-4xl p-8">Our Latest Blog Posts</p>
+  </div>
+  <div class="flex justify-center items-center mb-8">
+    <input id="default-range" type="range" value="50"
+      class="max-w-4xl h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700 mx-auto my-auto">
+  </div>
+
+  <div class="flex items-center justify-center p-8  ">
+    <div class="grid grid-cols-3 gap-4 mr-6  ">
+      <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <a href="#">
+          <img class="rounded-t-lg" src="img/blogpost1.png" alt="" />
+        </a>
+        <div class="p-5">
+          <span class="px-2 border-r border-gray-400 h-4 mr-2">Techno</span>
+          <span>Abril 9,2023</span>
+
+          <a href="#">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">The most 10 Chrome
+              Extention Downloand Strategy</h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Digital Transformation in Healthcare in 2023:
+            Lorem, ipsum dolor sit amet consectetur
+          </p>
+          <a href="#" class="inline-flex items-center p-2  text-sm font-medium text-center text-gray-600 ">
+            Read more
+            <img class="ml-2" src="img/flecha.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <a href="#">
+          <img class="rounded-t-lg" src="img/blogpost2.png" alt="" />
+        </a>
+        <div class="p-5">
+          <span class="px-2 border-r border-gray-400 h-4 mr-2">Techno</span>
+          <span>Abril 9,2023</span>
+
+          <a href="#">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">The most 10 Chrome
+              Extention Downloand Strategy</h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Digital Transformation in Healthcare in 2023:
+            Lorem, ipsum dolor sit amet consectetur
+          </p>
+          <a href="#" class="inline-flex items-center p-2  text-sm font-medium text-center text-gray-600 ">
+            Read more
+            <img class="ml-2" src="img/flecha.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <a href="#">
+          <img class="rounded-t-lg" src="img/blogpost3.jpg" alt="" />
+        </a>
+        <div class="p-5">
+          <span class="px-2 border-r border-gray-400 h-4 mr-2">Techno</span>
+          <span>Abril 9,2023</span>
+
+          <a href="#">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">The most 10 Chrome
+              Extention Downloand Strategy</h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Digital Transformation in Healthcare in 2023:
+            Lorem, ipsum dolor sit amet consectetur
+          </p>
+          <a href="#" class="inline-flex items-center p-2  text-sm font-medium text-center text-gray-600 ">
+            Read more
+            <img class="ml-2" src="img/flecha.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-blue-600 text-white p-8">
+    <p class="mb-2 text-center text-4xl font-bold ">Suscribe Our Newsletter</p>
+    <div class="flex items-center justify-center">
+      <button class="mb-6 mt-8 px-6 py-2 bg-white text-blue-500 rounded-md">Contat Us</button>
+    </div>
+  </div>
+  <!---------Footer (Stefany)---------->
+  <footer
+    class=" bottom-0 left-0 z-20 w-full p-4 bg-blue-900  shadow md:flex md:items-center md:justify-between md:p-6  text-white">
     <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-        <div class="grid grid-cols-2 gap-8 px-4 py-6 md:grid-cols-4 ">
-            <div class="mb-6 md:mb-0 ">
-                
-                <img src="img/logo2.png" class="h-8 mr-3" alt="Techno Logo" />
-                <p class="py-4">Completely strategize client-cent Phosfluorescently iterate efficient
-                    internal or organic.</p>
-                <h2 class="mb-6 text-sm font-semibold uppercase dark:text-white">Follow Us</h2>
-                <ul class="list-none">
-                    <li class="inline-block"><img src="img/facebook.png" alt=""></li>
-                    <li class="inline-block"><img src="img/instagram.png" alt=""></li>
-                    <li class="inline-block"><img src="img/twiter.png" alt=""></li>
-                    <li class="inline-block"><img src="img/youtube.png" alt=""></li> 
-                </ul>
-            </div>
-            <div>
-                <h2 class="mb-6 text-sm font-semibold  uppercase dark:text-white">Quick Links</h2>
-                <ul  >
-                    <li class="mb-4 flex items-center">
-                        <img src="img/flecha.png" alt="">
-                        <a href="#" class="ml-3">Home</a>
-                    </li>
-                    <li class="mb-4 flex items-center">
-                        <img src="img/flecha.png" alt="">
-                        <a href="#" class="ml-3">About Us</a>
-                    </li>
-                    <li class="mb-4 flex items-center">
-                        <img src="img/flecha.png" alt="">
-                        <a href="#" class="ml-3">Contact Us</a>
-                    </li>
-                    <li class="mb-4 flex items-center">
-                        <img src="img/flecha.png" alt="">
-                        <a href="#" class="ml-3">Services</a>
-                    </li>
-                    <li class="mb-4 flex items-center">
-                        <img src="img/flecha.png" alt="">
-                        <a href="#" class="ml-3">Our team</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h2 class="mb-6 text-sm font-semibold  uppercase dark:text-white">Popular Post</h2>
-                <ul  >
-                    <li class="mb-4">
-                        <a href="#" >Business Strategy Plan 2023 From the Usa</a>
-                        <p>April 9, 2023</p>
-                    </li>
-                    <hr class="my-6 border-blue-200 sm:mx-auto dark:border-blue-700 lg:my-6" />  
-                    <li class="mb-4">
-                        <a href="#">The most 10 Chrome Extention Download Strategy</a>
-                        <p>April 9, 2023</p>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h2 class="mb-6 text-sm font-semibold  uppercase dark:text-white">Contact Info</h2>
-                <ul  >
-                    <li class="mb-4 flex items-center">
-                        <img src="img/location.png" alt="">
-                        <a class="ml-3" href="#" >Location</a>
-                    </li>
-                    <li class="mb-4 flex items-center ">
-                        <img src="img/email.png" alt="">
-                        <a class="ml-3" href="#">Email Us</a>
-                    </li>
-                    <li class="mb-4 flex items-center mr-6">
-                        <img src="img/phone.png" alt="">
-                        <a class="ml-3" href="#">Phone Us</a>
-                    </li>
-                </ul>
-            </div>
-        
-        
-    </div>
-    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />    
-    <div class="sm:flex sm:items-center sm:justify-between">
-        <span class="text-sm  sm:text-center ">© 2023 <a href="#" class="hover:underline">Techno</a>. All Rights Reserved.
+      <div class="grid grid-cols-2 gap-8 px-4 py-6 md:grid-cols-4 ">
+        <div class="mb-6 md:mb-0 ">
+
+          <img src="img/logo2.png" class="h-8 mr-3" alt="Techno Logo" />
+          <p class="py-4">Completely strategize client-cent Phosfluorescently iterate efficient
+            internal or organic.</p>
+          <h2 class="mb-6 text-sm font-semibold uppercase dark:text-white">Follow Us</h2>
+          <ul class="list-none">
+            <li class="inline-block"><img src="img/facebook.png" alt=""></li>
+            <li class="inline-block"><img src="img/instagram.png" alt=""></li>
+            <li class="inline-block"><img src="img/twiter.png" alt=""></li>
+            <li class="inline-block"><img src="img/youtube.png" alt=""></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="mb-6 text-sm font-semibold  uppercase dark:text-white">Quick Links</h2>
+          <ul>
+            <li class="mb-4 flex items-center">
+              <img src="img/flecha.png" alt="">
+              <a href="#" class="ml-3">Home</a>
+            </li>
+            <li class="mb-4 flex items-center">
+              <img src="img/flecha.png" alt="">
+              <a href="#" class="ml-3">About Us</a>
+            </li>
+            <li class="mb-4 flex items-center">
+              <img src="img/flecha.png" alt="">
+              <a href="#" class="ml-3">Contact Us</a>
+            </li>
+            <li class="mb-4 flex items-center">
+              <img src="img/flecha.png" alt="">
+              <a href="#" class="ml-3">Services</a>
+            </li>
+            <li class="mb-4 flex items-center">
+              <img src="img/flecha.png" alt="">
+              <a href="#" class="ml-3">Our team</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="mb-6 text-sm font-semibold  uppercase dark:text-white">Popular Post</h2>
+          <ul>
+            <li class="mb-4">
+              <a href="#">Business Strategy Plan 2023 From the Usa</a>
+              <p>April 9, 2023</p>
+            </li>
+            <hr class="my-6 border-blue-200 sm:mx-auto dark:border-blue-700 lg:my-6" />
+            <li class="mb-4">
+              <a href="#">The most 10 Chrome Extention Download Strategy</a>
+              <p>April 9, 2023</p>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="mb-6 text-sm font-semibold  uppercase dark:text-white">Contact Info</h2>
+          <ul>
+            <li class="mb-4 flex items-center">
+              <img src="img/location.png" alt="">
+              <a class="ml-3" href="#">Location</a>
+            </li>
+            <li class="mb-4 flex items-center ">
+              <img src="img/email.png" alt="">
+              <a class="ml-3" href="#">Email Us</a>
+            </li>
+            <li class="mb-4 flex items-center mr-6">
+              <img src="img/phone.png" alt="">
+              <a class="ml-3" href="#">Phone Us</a>
+            </li>
+          </ul>
+        </div>
+
+
+      </div>
+      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <div class="sm:flex sm:items-center sm:justify-between">
+        <span class="text-sm  sm:text-center ">© 2023 <a href="#" class="hover:underline">Techno</a>. All Rights
+          Reserved.
         </span>
         <ul class="flex flex-wrap items-center mt-3 text-sm font-medium -400 sm:mt-0">
-            <li>
-                <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
-            </li>
-            <li>
-                <a href="#" class="mr-4 hover:underline md:mr-6">Terms & Conditions</a>
-            </li>
-            <li>
-                <a href="#" class="hover:underline">Contact Us</a>
-            </li>
+          <li>
+            <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="#" class="mr-4 hover:underline md:mr-6">Terms & Conditions</a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline">Contact Us</a>
+          </li>
         </ul>
-    </div>
+      </div>
 
-    </footer>
+  </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
 
