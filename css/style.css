@@ -491,7 +491,7 @@ nav .menu_item {
 /* Services and Choose Section (Brayan Sanchez) */
 .contenedor-pestañas{
     position: relative;
-    height: 846px;
+  
     width: 100%;
     display: flex;
     text-align: center;
@@ -510,6 +510,18 @@ nav .menu_item {
     height: 846px;
     width: 100%;
 }
+
+@media (max-width: 1502px) {
+  .contenedor-choose {
+    height: 1240px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .contenedor-choose {
+    height: 1750px;
+  }
+}
 .fondo-mundo {
 
     position: absolute;
@@ -519,12 +531,110 @@ nav .menu_item {
     top: 0;
     left: 0;
     right: 0;
+    display:flex;
 
+}
+
+.contenedor-btnpestañas{
+  height: 500px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-image: url("../img/background-tabs.jpg");
+  position: relative;
+  z-index:1;
+}
+
+.contenedor-btnpestañas::after {
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:#0D2335C4;
+  z-index:-1;
+}
+
+
+.contenedor-titletab{
+  display: flex;
+  margin-bottom: 10%;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.contenedor-titletab h2{
+  font-size: 44px;
+  margin-bottom: 0px;
+  text-transform: capitalize;
+  margin-top: 0;
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+.contenedor-titletab h3{
+  letter-spacing: 5px;
+  font-size: 17px;
+  margin-top: 0;
+}
+.contenedor-titletab p{
+  width: 60%;
+  text-align: center;
+}
+.contenedor-btntab{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.contenedor-balldos{
+  margin-top: 20px;
+  margin-bottom: 20px;
+width: 100px;
+height: 20px;
+}
+
+
+.btntab{
+  height: 102px;
+  width: 233px;
+  background-color: #0C5ADB;
+  color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-weight: 550;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.fa-solid, .fas,.fa-brands,.fa-sharp{
+  height: 10px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+
+
+.btntab.active{
+  background-color: white;
+  color: #0c5adb;
+  transition: 0.5s;
+}
+
+.tab.close{
+display: none;
 }
 
 .tab{
     display: flex;
     padding: 80px;
+    flex-wrap: nowrap;
+    justify-content: center;
 }
 
 .tab-img{
@@ -560,13 +670,35 @@ nav .menu_item {
     padding-left: 20px;
     color: rgb(87, 87, 87);
 }
+
+@media (max-width: 1502px) {
+  .tab{
+    flex-wrap: wrap;
+  }
+  .tab-txt{
+    width: 80%;
+    padding-left: 5px;
+  }
+}
+@media (max-width: 700px) {
+.tab-img{
+  height: 450px;
+}
+@media (max-width: 550px) {
+  .tab-img{
+    height: 340px;
+  }
+}
+}
 .contenedor-choose-texto {
     position: absolute;
     top: 10%;
     left: 5%;
     justify-content: center;
     width: 90%;
-    height: 80%;
+
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .contenedor-choose-texto div{
@@ -603,7 +735,7 @@ nav .menu_item {
     display:flex;
     width: 100px;
     height: 10px;
-    margin-left: 45%;
+    margin-left: 210px;
     margin-top: 15px;
     margin-bottom: 15px;
 
@@ -611,35 +743,30 @@ nav .menu_item {
 
 .barra{
     position: absolute;
-    background-color: rgb(159, 191, 205);
+    background-color:#a9bfe7;
     border-radius: 5px;
     width: 90px;
-    height: 5px;
-    margin-top: 2px;
+    height: 4px;
+    margin-top: 3px;
     margin-left: 5px;
 }
 .ball {
-    width: 10%;
-    padding-bottom: 10%;
-    border-radius: 50%;
-    background: #2046d1;
-    
-    position: absolute;
-    left: 5%;
+  width: 8px;
+  padding-bottom: 8px;
+  border-radius: 50%;
+  background: #0c5adb;
+  position: absolute;
   }
   .ball {
-    animation: 7s move infinite ease-in-out;
+    animation: 3s move infinite linear;
   }
 
   @keyframes move {
-    0% {
-        left: 5%;
+    from {
+      transform: translateX(0px);
     }
-    50% {
-        left: 85%;
-    }
-    100% {
-        left: 5%;
+    to {
+      transform: translateX(85px);
     }
   }
 
@@ -689,11 +816,16 @@ nav .menu_item {
 }
 
 .c-img div h3{
-    padding-top: 320px;
+    padding-top: 270px;
     font-size: 23px;
     font-weight: 500;
+    display: flex;
+    flex-direction: column;
 }
 
+.c-img div h3 .fa-solid,.c-img div h3 .fa-sharp{
+  margin-bottom: 30px;
+}
 .text-choose {
     position: absolute;
     transform: perspective(600px) rotateY(180deg);
@@ -715,8 +847,14 @@ nav .menu_item {
 }
 
 .text-choose div h3{
-    padding-top: 150px;
+    padding-top: 60px;
     font-size: 23px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-choose div h3 .fa-solid,.text-choose div h3 .fa-sharp{
+  margin-bottom: 40px;
 }
 
 .text-choose div p{
