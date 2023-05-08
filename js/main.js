@@ -1,5 +1,4 @@
 'use strict';
-
 // Get the modal
 var modal = document.getElementById('myModal');
 
@@ -19,26 +18,5 @@ span.onclick = function () {
   modal.style.display = "none";
 }
 
-console.log('Hello!');
 
-var swiper = new Swiper('.myswiper', {
-  // Optional parameters
-  slidesPerView: 3,
-  spaceBetween: 30,
-  slidesPerGroup:3,
-  loop: true,
-  loopFillGroupWithBlank:true,
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-    clickable:true,
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-});
