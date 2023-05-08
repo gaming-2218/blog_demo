@@ -847,8 +847,14 @@ display: none;
 }
 
 .text-choose div h3{
-    padding-top: 150px;
+    padding-top: 60px;
     font-size: 23px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-choose div h3 .fa-solid,.text-choose div h3 .fa-sharp{
+  margin-bottom: 40px;
 }
 
 .text-choose div p{
