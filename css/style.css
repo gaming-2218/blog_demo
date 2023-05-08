@@ -501,3 +501,93 @@ nav .menu_item {
 
 
 /* End Section and Footer (Stefany) */
+.circulo {
+  position: relative;
+  margin-top: -18%;
+  margin-left: 5px;
+  padding: 5%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 40px solid #007bff; /* Cambia el valor hexagonal para cambiar el color */
+  float: left; /* O cambia a 'right' para que flote a la derecha */
+  z-index: -1;
+  animation: mover 2s ease-in-out infinite alternate;
+}
+
+@keyframes mover {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(20px);
+  }
+}
+
+
+
+.seccion-imagenes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.imagen {
+  position: relative;
+  width: 30%;
+}
+
+.imagen img {
+  max-width: 100%;
+  height: auto;
+}
+
+.capa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 123, 255, 0);
+  z-index: 1;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.imagen:hover .capa {
+  background-color: rgba(0, 123, 255, 0.5);
+}
+
+.botones {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+  display: none;
+  z-index: 2;
+  background-color: #292bb1;
+}
+
+.imagen:hover .botones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagen:hover .botones button {
+  margin: 10px;
+}
+
+
+
+.hover-link:hover {
+  color: blue;
+}
+
+span{
+  cursor: pointer;
+}
+#texto-miclase:hover span{
+  color: rgba(0, 0, 0, 0);
+}
+
